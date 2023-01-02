@@ -1,0 +1,126 @@
+/* reglage de la marge par defaut */
+body{
+    margin: 0 auto ;   
+}
+/* le: header qui porte la classe "header" */
+header.header {
+    display: flex;
+    align-items:flex-end;   
+    
+
+}
+/* le logo */
+header.header img {
+    width: 100px;height: 100px;
+    flex-wrap: wrap;
+}
+/* section haut de la page qui porte la classe top-page */
+section.top-page {
+    background-color: grey ;
+    flex-wrap: wrap;
+
+}
+/* on s'occupe du menu de navigation qui est dans la partie header */
+.navi {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-around;
+   
+      
+}
+/* les bouttons */
+.navi li.btn {
+    color: white;
+    margin-bottom: 10px;      
+}
+/*  les bouttons de liens et leurs propriétés*/
+.navi li.btn a{
+color: white;
+text-decoration: none;
+background-color: black;
+padding: 4px;
+border-radius: 10px;
+border: 2.5px solid goldenrod;
+}
+/* inversement des couleurs au survol de la sourie sur les bouttons*/
+.navi li.btn:hover a{
+    color:black ;
+    background-color:white ;
+}
+/* ici se termine la partie header */
+
+/* et commence la partie principal */
+
+section.galerie h2 {
+    display: flex;
+    align-self: center;
+    margin-left: 600px;
+    width: 120px;
+    
+    background-color: goldenrod;
+    flex-wrap: wrap;
+
+}
+section.galerie div.contenair {
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(400px 1fr));
+    
+}
+
+/*  la partie footer  */
+
+section.end footer.footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    color: white;
+    
+    background-color: rgb(100, 18, 18);
+}
+section.end footer.footer ul {
+    display: flex;
+    
+    list-style-type: none;
+    flex-direction: row;
+    width: 100%;
+
+   justify-content: space-around;
+    align-items: center;
+    padding-right: 300px;
+}
+section.end footer.footer div.gauchf{
+
+    display: flex;
+    
+    list-style-type: none;
+    flex-direction: row;
+    width: 100%;
+   justify-content: space-around;
+    align-items: center;
+}
+section.end footer.footer div.gauchf ul.a3{
+    display: block;
+    margin-left: 250px;
+
+}
+section.end footer.footer div.gauchf ul.a2{
+    display: flex;
+    margin-left: 100px;
+    width: 20%;
+    
+}
+
+section.end footer.footer div.gauchf ul.a1{
+    display: block;
+    
+}
+section.end footer.footer div.gauchf{
+    width: 100%;
+    flex-direction: row;
+   align-items: center;
+   align-content: flex-end;  
+
+}
