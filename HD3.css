@@ -1,0 +1,287 @@
+
+* {
+
+}
+/* reglage de la marge par defaut */
+body{
+    margin: 0 auto ;   
+}
+/* le: header qui porte la classe "header" */
+header.header {
+    display: flex;
+    align-items:flex-end;   
+    
+
+}
+/* le logo */
+header.header img {
+    width: 100px;height: 100px;
+    flex-wrap: wrap;
+}
+/* section haut de la page qui porte la classe top-page */
+section.top-page {
+    background-color: grey ;
+    flex-wrap: wrap;
+
+}
+/* on s'occupe du menu de navigation qui est dans la partie header */
+.navi {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-around;
+   
+      
+}
+/* les bouttons */
+.navi li.btn {
+    color: white;
+    margin-bottom: 10px;      
+}
+/*  les bouttons de liens et leurs propriétés*/
+.navi li.btn a{
+color: white;
+text-decoration: none;
+background-color: black;
+padding: 4px;
+border-radius: 10px;
+border: 2.5px solid goldenrod;
+}
+/* inversement des couleurs au survol de la sourie sur les bouttons*/
+.navi li.btn:hover a{
+    color:black ;
+    background-color:white ;
+}
+    
+/* ici se termine la partie header */
+
+/* et commence la partie principal */
+
+
+section.une{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    background-color:rgb(100, 18, 18)
+    
+}
+section.une div.img {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+   
+
+}
+section.une div.dip {
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    height: 400px;
+    margin:auto
+}
+section.une div.dip h1.promo{
+    display: flex;
+    margin-top: 15px;
+    width: 160px;
+    font-size:xx-large;
+
+    
+    margin-left: 40px;
+    margin-right: 30px;
+    background-color: goldenrod;
+    text-justify: auto;
+}
+section.une div.dip h3.code1 {
+    display: flex;
+    margin-left: 20px;
+
+}
+
+section.une div.dip h2.fabrik{
+    display: flex;
+    color: rgb(95, 217,20);
+    padding-bottom: 40px;
+    margin-left: 40px;
+}
+
+@media screen and (max-width:390px){
+    nav.onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
+    
+section.deux {
+    display: flex;
+    
+    background-color:rgb(100, 18, 18);
+}
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.deux div.home h1.welcome {
+    color: white;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+section.deux div.home p.dev {
+    color: white;
+    font-size: 15px;
+    margin-top: 60px;
+}
+section.deux div.imge {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+section.trois {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 100%;
+   
+}
+section.trois h2.ser {
+    display: flex;
+    align-self: center;
+    
+    
+    background-color: goldenrod;
+    flex-wrap: wrap;
+
+}
+section.trois div.image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+section.trois ul.pol {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+section.quatre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    background-color: rgb(100, 18, 18);
+
+}
+section.quatre h2.équipe {
+    display: flex;
+    align-self: center;
+    
+    
+    background-color: goldenrod;
+    flex-wrap: wrap;
+    
+}
+section.quatre ul.imgteam {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-around;
+}
+section.quatre ul.noms {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+section.cinq {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: grey;
+}
+section.cinq h2.contact {
+    display: flex;
+    align-self: center;
+    
+    
+    background-color: goldenrod;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 790px;
+    height: 685px;
+    left: 55px;
+    top: 110px;
+    margin-left: 20px;
+}
+
+form input, button{
+    padding: 1em 1em;
+}
+/*  la partie footer  */
+
+section.end footer.footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    color: white;
+    
+    background-color: rgb(100, 18, 18);
+}
+section.end footer.footer ul {
+    display: flex;
+    
+    list-style-type: none;
+    flex-direction: row;
+    width: 100%;
+
+   justify-content: space-around;
+    align-items: center;
+    padding-right: 300px;
+}
+section.end footer.footer div.gauchf{
+
+    display: flex;
+    
+    list-style-type: none;
+    flex-direction: row;
+    width: 100%;
+   justify-content: space-around;
+    align-items: center;
+}
+section.end footer.footer div.gauchf ul.a3{
+    display: block;
+    margin-left: 250px;
+
+}
+section.end footer.footer div.gauchf ul.a2{
+    display: flex;
+    margin-left: 100px;
+    width: 20%;
+    
+}
+
+section.end footer.footer div.gauchf ul.a1{
+    display: block;
+    
+}
+section.end footer.footer div.gauchf{
+    width: 100%;
+    flex-direction: row;
+   align-items: center;
+   align-content: flex-end;  
+
+}
